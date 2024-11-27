@@ -2,10 +2,11 @@ import { Link } from 'react-router-dom';
 import Filters from '../components/pokedex/Filters';
 import Search from '../components/pokedex/Search';
 import { useEffect, useState } from 'react';
-import PokemonList from '../components/pokedex/pokemonList';
+
 import PokemonCard from '../components/pokedex/PokemonCard';
 import { useNameContext } from '../contexts/nameContext';
 import '../styles/pokedex.css';
+import PokemonList from '../components/pokedex/PokemonList';
 
 function Pokedex() {
 	const [name] = useNameContext();
