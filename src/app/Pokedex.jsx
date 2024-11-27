@@ -4,7 +4,7 @@ import Search from '../components/pokedex/Search';
 import { useEffect, useState } from 'react';
 import PokemonCard from '../components/pokedex/PokemonCard';
 import { useNameContext } from '../contexts/nameContext';
-import '../styles/pokedex.css';
+import '../styles/Pokedex.css';
 import PokemonList from '../components/pokedex/PokemonList';
 
 function Pokedex() {
