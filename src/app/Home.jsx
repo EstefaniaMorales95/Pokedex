@@ -1,7 +1,7 @@
 import React, { useContext, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { types, useNameContext } from '../contexts/nameContext';
-import '../styles/home.css';
+import '../styles/Home.css';
 
 function Home() {
 	const inputRef = useRef();
