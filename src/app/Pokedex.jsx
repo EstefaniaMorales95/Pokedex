@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import Filters from '../components/pokedex/Filters';
 import Search from '../components/pokedex/Search';
 import { useEffect, useState } from 'react';
-
 import PokemonCard from '../components/pokedex/PokemonCard';
 import { useNameContext } from '../contexts/nameContext';
 import '../styles/pokedex.css';
