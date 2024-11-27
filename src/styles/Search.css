@@ -1,0 +1,61 @@
+.search {
+	display: flex;
+	align-items: center;
+}
+.search__input {
+	background-color: #f9fbf6;
+	border: 2px solid #ccc;
+	padding: 0.2em;
+	border-radius: 4px 0 0 4px;
+	display: flex;
+	align-items: center;
+	gap: 0.25em;
+}
+.search__input input {
+	background-color: #f7f9f3;
+	border: none;
+	outline: none;
+}
+.search__btn {
+	background-color: #2aac9d;
+	border: 2px solid;
+	padding: 0.4em;
+	border-radius: 0 4px 4px 0;
+	color: #fff;
+	cursor: pointer;
+	transition: background-color 0.2s ease-in-out;
+}
+.search__btn:hover {
+	background-color: #d4bd22;
+}
+.pokedex__pagination-container {
+	display: flex;
+	justify-content: center;
+	gap: 1em;
+	padding: 1em;
+	background-color: transparent;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+}
+
+.pokedex__pagination {
+	padding: 0.5em;
+	background-color: #2aac9d;
+	color: white;
+	cursor: pointer;
+	border: none;
+	border-radius: 5px;
+	transition: background-color 0.2s ease-in-out;
+}
+
+.pokedex__pagination:hover {
+	background-color: #d4bd22;
+}
+
+.pokedex__pagination:disabled {
+	background-color: #ccc;
+	cursor: not-allowed;
+}

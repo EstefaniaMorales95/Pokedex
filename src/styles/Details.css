@@ -1,0 +1,144 @@
+.details {
+	font-family: 'Arial', sans-serif;
+	color: var(--text-color-light);
+	padding: 2em;
+	background-color: var(--background-color-light);
+	border-radius: 10px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.details__back-link {
+	text-decoration: none;
+	color: var(--link-color-light);
+	font-weight: bold;
+	margin-bottom: 1em;
+	display: inline-block;
+}
+
+.details__container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 3em;
+}
+
+.details__image-container {
+	flex: 1 1 300px;
+	text-align: center;
+}
+
+.details__image {
+	width: 250px;
+	height: 250px;
+	border-radius: 15px;
+	background-color: var(--card-background-light);
+	border: 3px solid var(--border-color-light);
+	padding: 1em;
+	box-shadow: 0 4px 15px #7ec6c5;
+}
+
+.details__info {
+	flex: auto;
+	background-color: var(--card-background-light);
+	border-radius: 10px;
+	padding: 1em;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 4px 15px #7ec6c5;
+}
+
+.details__id {
+	font-size: 14px;
+	color: #777;
+}
+
+.details__name {
+	text-transform: capitalize;
+	font-size: 2em;
+	color: var(--text-color-light);
+	margin: 0.5em 0;
+}
+
+.details__stats {
+	display: flex;
+	justify-content: space-between;
+	margin: 1.5em 0;
+}
+
+.details__stat {
+	text-align: center;
+}
+
+.details__stat-label {
+	font-size: 12px;
+	color: #666;
+}
+
+.details__attributes {
+	margin-top: 1.5em;
+}
+
+.details__types,
+.details__abilities {
+	margin-bottom: 1.5em;
+}
+
+.details__section-title {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: var(--text-color-light);
+	margin-bottom: 1em;
+}
+
+.details__type-list,
+.details__ability-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1em;
+	justify-content: center;
+}
+
+.details__type,
+.details__ability {
+	background-color: #7ec6c5;
+	padding: 0.5em 1em;
+	border-radius: 20px;
+	font-size: 14px;
+	color: var(--text-color-light);
+	border: 1px solid var(--border-color-light);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	transition: transform 0.2s ease;
+}
+
+.details__type:hover,
+.details__ability:hover {
+	transform: scale(1.1);
+}
+
+.details__footer-title {
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: var(--text-color-light);
+	margin-top: 2em;
+}
+
+@media (prefers-color-scheme: dark) {
+	.details {
+		background-color: var(--background-color-dark);
+		color: var(--text-color-dark);
+	}
+
+	.details__back-link {
+		color: var(--link-color-dark);
+	}
+
+	.details__image {
+		background-color: var(--card-background-dark);
+		border: 3px solid var(--border-color-dark);
+	}
+
+	.details__info {
+		background-color: var(--card-background-dark);
+		box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+	}
+}
