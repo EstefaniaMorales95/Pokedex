@@ -18,7 +18,7 @@ function Pokedex() {
 	const ITEMS_PER_PAGE = 5;
 
 	useEffect(() => {
-		fetch('https://pokeapi.co/api/v2/pokemon?limit=150')
+		fetch('https://pokeapi.co/api/v2/pokemon?limit=6480')
 			.then((res) => res.json())
 			.then((data) => setPokemons(data.results));
 	}, []);

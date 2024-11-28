@@ -1,10 +1,11 @@
-import { Link, useParams } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
 import { useFetch } from '../hooks/useFetch';
-import { useEffect } from 'react';
 import '../styles/Details.css';
 
 function Details() {
 	const params = useParams();
+	const navigate = useNavigate();
 	const [pokemon, setPokemon] = useFetch();
 
 	useEffect(() => {
@@ -17,11 +18,15 @@ function Details() {
 
 	const types = pokemon?.types.map((type) => type.type.name);
 
+	const handleGoBack = () => {
+		navigate('/pokedex');
+	};
+
 	return (
 		<div className="details">
-			<Link className="poke__v" to="/">
+			<button className="poke__v" onClick={handleGoBack}>
 				{'⇽'} Volver
-			</Link>
+			</button>
 
 			<div className="details__content">
 				<div className="details__image-container">

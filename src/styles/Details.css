@@ -6,6 +6,10 @@
 	border-radius: 10px;
 	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+.details:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
 
 .details__back-link {
 	text-decoration: none;
@@ -35,8 +39,12 @@
 	border: 3px solid var(--border-color-light);
 	padding: 1em;
 	box-shadow: 0 4px 15px #7ec6c5;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
+.details__image:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
 .details__info {
 	flex: auto;
 	background-color: var(--card-background-light);

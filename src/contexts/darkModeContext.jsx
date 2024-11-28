@@ -2,11 +2,23 @@ import { createContext, useContext, useState } from 'react';
 
 const DarkModeContext = createContext();
 
+const initialState = window.localStorage.getItem('darkMode') || false;
+
 const DarkModeProvider = ({ children }) => {
-	const [darkMode, setDarkMode] = useState(false);
+	console.log(typeof initialState);
+	console.log(initialState);
+	const [darkMode, setDarkMode] = useState(initialState);
 
 	const toggleDarkMode = () => {
-		setDarkMode((prevMode) => !prevMode);
+		setDarkMode((prevMode) => {
+			const state = !prevMode;
+			if (window.localStorage.getItem('darkMode')) {
+				window.localStorage.removeItem('darkMode', state);
+			} else {
+				window.localStorage.setItem('darkMode', state);
+			}
+			return state;
+		});
 	};
 
 	return (
